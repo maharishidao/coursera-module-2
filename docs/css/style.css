@@ -1,2 +1,59 @@
-h1 {color: red;}
-div.lol {background-color: gray;}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.main { height: 0px;
+padding: 0px 10px 0px 10px;
+/*background-color: red;*/
+}
+
+h1 {
+	color: red; margin:10px 10px 0px 10px;
+}
+
+h2 {
+ width: 94px;
+ height: 32px;
+ border-bottom: 2px solid black;
+ border-left: 2px solid black;
+ position: relative;
+ float: right;
+  }
+
+ .pad {
+ 	padding: 10px ;
+/*	margin-bottom: 8px;
+*/ }
+
+section {
+	/*padding: 10px;
+	margin-bottom: 8px;*/
+	background-color: #dad0d0;
+	border: 2px solid black;
+}
+section > p {padding: 12px; padding-top: 38px;}
+
+section.chiken h2 {background-color: #ffbf79; color: white;}
+section.beef h2 {background-color: #ff8090; color: white;}
+section.sushi h2 {background-color: #40a0ff; color: white;}
+
+/*media queries*/
+
+@media (min-width: 992px){
+	.lg-4 {width: 33.33%; float: left;}
+div.pad {}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.md-6 {width: 50%;float: left;}
+	.md-12 {width: 100%;float: left;}
+
+}
+
+@media (max-width: 767px) {
+	.sm-12 {width: 100%; float: left;}
+
+}
+
